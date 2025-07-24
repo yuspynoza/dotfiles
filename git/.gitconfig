@@ -1,0 +1,54 @@
+[user]
+    name = Yuspynoza
+    email = yuspynoza.developer@gmail.com
+
+[color]
+    ui = auto
+
+[core]
+    editor = nvim
+    pager = delta
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[alias]
+    s = status -sb
+    a = add .
+    cm = commit -m
+    ca = commit --amend
+    co = checkout
+    b = branch
+    l = log --oneline --graph --decorate --all
+    d = diff
+    ds = diff --staged
+    f = fetch --all --prune
+    pu = push
+    pl = pull --rebase
+    r = reset
+    rh = reset --hard
+    unstage = reset HEAD --
+
+[merge]
+    tool = vimdiff
+
+[diff]
+    tool = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = line-numbers decorations
+    line-numbers = true
+    dark = true
+    navigate = true
+    side-by-side = false
+    whitespace-error-style = 22 reverse
+
+[credential]
+    helper = store
+
+[push]
+    default = current

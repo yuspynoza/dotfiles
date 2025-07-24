@@ -10,7 +10,7 @@ atuin init fish | source
 thefuck --alias | source
 
 # ========== ENV ==========
-set -gx PATH $PATH (go env GOPATH)/bin .config/composer/vendor/bin
+set -gx PATH $PATH (go env GOPATH)/bin $HOME/.config/composer/vendor/bin
 
 # ========== Aliases ==========
 alias mkdir="mkdir -p"
@@ -38,6 +38,9 @@ alias gl="git log --oneline --graph --decorate"
 
 alias hist="atuin search"  # jika pakai atuin
 alias fuck="thefuck"
+
+alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"
+alias artisan="[ -f artisan ] && php artisan"
 
 # ========== fzf Keybindings (opsional) ==========
 # set -g FZF_CTRL_T_COMMAND "command find -L \$dir -type f 2> /dev/null | sed '1d; s#^\./##'"

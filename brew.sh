@@ -27,6 +27,8 @@ brew install \
   git \
   git-delta \
   thefuck \
-  stow 
+  stow \
+  atuin \
+  go php composer oven-sh/bun/bun
 
 echo "Done!"

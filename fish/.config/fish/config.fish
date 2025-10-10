@@ -12,6 +12,7 @@ thefuck --alias | source
 # ========== ENV ==========
 set -gx PATH $PATH (go env GOPATH)/bin $HOME/.config/composer/vendor/bin
 set CONTEXT7_API_KEY "ctx7sk-9d2041d3-3676-4117-b842-fbfb8878bc37"
+
 # ========== Aliases ==========
 alias mkdir="mkdir -p"
 alias c="clear"
